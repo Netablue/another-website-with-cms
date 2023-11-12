@@ -3,6 +3,36 @@
 
 return [
 
+    // Start to create custom block, then, commented all the code
+    'block_editor' => [
+
+        // No block
+        'use_twill_blocks' => [],
+        'block_single_layout' => 'site.layouts.block', // layout to use when rendering a single block in the editor
+        'crops' => [ 
+            'highlight' => [
+                'desktop' => [
+                    [
+                        'name' => 'desktop',
+                        'ratio' => 16 / 9,
+                    ],
+                ],
+                'mobile' => [
+                    [
+                        'name' => 'mobile',
+                        'ratio' => 1,
+                    ],
+                ],
+            ],
+        ],
+    ]
+];
+    
+    
+
+
+    /* Twill config
+
     'enabled' => [
         'users-management' => true,
         'media-library' => true,
@@ -48,6 +78,7 @@ return [
 
         // No block
         'use_twill_blocks' => [],
+*/
 
         /*
         |--------------------------------------------------------------------------
@@ -58,6 +89,8 @@ return [
         | for the Block editor field and Editor features.
         |
          */
+
+         /*
         'block_single_layout' => 'site.layouts.block', // layout to use when rendering a single block in the editor
         'block_views_path' => 'site.blocks', // path where a view file per block type is stored
         'block_views_mappings' => [], // custom mapping of block types and views
@@ -147,5 +180,5 @@ return [
         ],
     ],
 ];
-
+*/
 ?>
