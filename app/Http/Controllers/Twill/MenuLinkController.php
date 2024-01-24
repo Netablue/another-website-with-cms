@@ -35,6 +35,8 @@ class MenuLinkController extends BaseModuleController
         //     Input::make()->name('description')->label('Description')->translatable()
         // );
 
+        $form->add(Browser::make()->name('page')->modules([Page::class]));
+
         return $form;
     }
 
